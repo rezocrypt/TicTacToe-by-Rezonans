@@ -1,0 +1,551 @@
+body{
+  background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed;
+
+}
+
+canvas{
+    background-color: white !important;
+    border-radius: 5%;
+    border: green !important;
+    box-shadow: 5px 10px 8px #000000;
+    opacity: 0.6;
+}
+
+#wrap{
+  margin: 0px !important;
+  float: left;
+}
+
+
+#getInput{
+  padding-top: 0.5% !important;
+  padding-bottom: 2% !important;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+  width: 20%;
+  height: 50%;
+  background-color: rgba(225, 225, 225, 0.7);
+  margin-right: 5%;
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px black;
+  float: right;
+  
+}
+
+.settingbar{
+  width: 20%;
+  margin-left: 50%;
+  height: auto;
+  background-color: violet;
+  padding-bottom: 2% !important;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+  padding-top: 0.05% !important;
+
+  background-color: rgba(225, 225, 225, 0.7);
+  box-shadow: 1px 1px 2px black;
+  border-radius: 5%;
+  
+}
+#turtlecanvas{
+  margin: 0px !important;
+}
+#sttext{
+  color: #04AA6D;
+  font-size: 3vw !important;
+  font-family: Impact, fantasy;
+  text-align: center;
+}
+#playtext{
+  color: #04AA6D;
+  margin: 0px;
+  margin-top: 10% !important;
+  margin-bottom: 10% !important;
+  font-size: 3vw !important;
+  font-family: Impact, fantasy;
+  text-align: center;
+}
+
+
+
+.doc-link-small{
+    text-decoration: none !important;
+    font-size: 0px;
+}
+
+#name, #cagesize{
+  margin-top: 2%;
+}
+#name{
+  margin-top: 1% !important;
+}
+#xcord, #ycord {
+    margin-top: 2%;
+    margin-left: 2% !important;
+}
+#play{
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
+  background-color: #3CBC8D;
+  color: white !important;
+  font-family: Impact, fantasy;
+  font-size: 2em;
+  border-color:  "#298161";
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  padding: 3px;
+  width: 100%;
+}
+#play:hover{
+    animation-name: playanimation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-play-state:inherit;
+}
+
+@keyframes playanimation {
+    from {background-color: #3CBC8D;}
+    to {background-color: #15865d;}
+  }
+
+
+
+
+
+
+
+  #xcord {
+    text-align: center !important;
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #xcord:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #xcord:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  #xcord::placeholder{
+    color: #C5C5C5;
+  }
+
+
+
+
+
+
+
+  #ycord {
+    text-align: center !important;
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #ycord:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #ycord:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  yxcord::placeholder{
+    color: #C5C5C5;
+  }
+
+  #ycord::placeholder{
+    color: #C5C5C5;
+  }
+
+
+
+
+#play {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100% !important;
+}
+
+#play:hover,
+#play:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#play:hover {
+  transform: translateY(-1px);
+}
+
+#play:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+#choose {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100% !important;
+}
+
+#choose:hover,
+#choose:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#choose:hover {
+  transform: translateY(-1px);
+}
+
+#choose:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#name {
+  text-align: center !important;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#container{
+  padding: 1%;
+}
+
+#name:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#name:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+#name::placeholder{
+  color: #C5C5C5;
+}
+
+
+
+
+#cagesize {
+  text-align: center !important;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#cagesize:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#cagesize:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+#cagesize::placeholder{
+  color: #C5C5C5;
+}
+
+#choose{
+  margin-top: 5% !important;
+  margin-bottom: 5% !important;
+}
+
+#selecter{
+  margin-top: 2%;
+  width: 80% !important;
+  margin-bottom: 5%;
+}
+
+
+#selecter {
+  text-align: center !important;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#selecter:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+
+#difselecter{
+  margin-top: 2%;
+  width: 80% !important;
+  margin-bottom: 5%;
+}
+
+
+#difselecter {
+  text-align: center !important;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#difselecter:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+
+#wonorlose{
+  padding-top: 0.5% !important;
+  padding-bottom: 2% !important;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+  width: 20%;
+  height: 50%;
+  background-color: rgba(225, 225, 225, 0.7);
+  margin-right: 5%;
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px black; 
+  font-size: 3vw !important;
+  font-family: Impact, fantasy;
+  float:right;
+}
+
+#errorText2{
+  margin: 1px;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#error{
+  padding-top: 0.5% !important;
+  padding-bottom: 2% !important;
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+  width: 20%;
+  height: 20% !important;
+  background-color: rgba(225, 225, 225, 0.7);
+  margin-right: 5%;
+  border-radius: 5%;
+  box-shadow: 1px 1px 2px black; 
+  font-size: 1.8vw !important;
+  font-family: Impact, fantasy;
+  float: right;
+}
+
+#wl{
+  text-align: center;
+}
+
+#selecter:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+#selecter::placeholder{
+  color: #C5C5C5;
+}
+
+#difselecter:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+#difselecter::placeholder{
+  color: #C5C5C5;
+}
