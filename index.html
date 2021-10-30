@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+      <title>Tic Tac Toe</title>
+      <link type="text/css" rel="stylesheet" href="lib/turtle.css" />
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="lib/style.css">
+      <link rel="icon" href="lib/icon.png">
+   </head>
+   <body>
+
+
+
+      <div id="container">
+      <div id="wrap">
+            <canvas id="turtlecanvas" width="600" height="600"></canvas>
+            <canvas id="imagecanvas" width="600" height="600" style="display:none"></canvas>
+      </div> 
+
+
+
+
+
+      <div id="getInput">
+         <h2 id="playtext">Play</h2>
+      <center><input type="number" id="xcord" placeholder="X" id="myInput"></center>
+      <center><input type="number" id="ycord" placeholder="Y" id="myInput"></center>
+      <br>
+      <button type="button" id="play" onclick="makeStep();">Play</button>
+      </div>
+
+
+
+
+      <div id="wonorlose">
+         <h2 id="wl"></h2>
+      </div>
+      
+      
+      
+
+      
+
+      <div class="settingbar">
+         <h2 id="sttext">New Game</h2>
+         <center><input type="text" id="name" placeholder="Name" value="Player" id="myInput"></center>
+         <center><input type="number" id="cagesize" value="3" placeholder="Cage size" id="myInput"></center>
+         <center>
+            <select id="selecter">
+               <option value="X" enabled selected>X</option>
+               <option value="O">O</option>
+           </select>
+           <select id="difselecter">
+            <option value="3" >Hard</option>
+            <option value="2" enabled selected>Medium</option>
+            <option value="1">Easy</option>
+        </select>
+        <br>
+         <button type="button" id="choose" onclick="chooseSettings();">Start Game</button>
+         </center>
+      </div>
+
+      <div id="error" width="100%",height="20%"><h4 id="errorText">a</h4><h6 id="errorText2">a</h6></div>
+       
+      </div>
+      
+
+
+      <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+      <a target="blank" href="https://github.com/rezonanscompany"><p>Made by Rezonans</p></a>
+
+
+
+
+      
+      <script type="text/javascript" src="lib/library.js"></script>
+      <script type="text/javascript" src="lib/turtle.js"></script>
+   </body>
+</html>
